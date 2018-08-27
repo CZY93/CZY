@@ -19,7 +19,7 @@ import com.beraising.hrv5.modules.personnelmanagement.empcenter.infochange.dao.T
 
 	/**
 	 * @author :chenzhiyuan
-	 *
+	 * 提供给powerdesigner生成的xml解析工具
 	 * @time:2018年7月26日上午10:40:24
 	 * @version:
 	 * @param:
