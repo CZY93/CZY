@@ -1,0 +1,38 @@
+package test;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class signed {
+	static int u = 0;
+       public static void main(String[] args) throws ParseException {
+	   		Timer timer = new Timer();
+	   		Date s = new Date();
+	   		SimpleDateFormat op = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	   		String mop = op.format(s);
+	   		System.out.println("程序开始：" + mop);
+	   		
+			Date sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2018-09-05 11:58:20");
+			System.out.println("程序将在" + sd + "结束！");	
+	   		timer.schedule(new MyTa(23),sd);	   	 	}
+      public static class MyTa extends TimerTask{
+		public MyTa(int i) {
+			// TODO Auto-generated constructor stub
+			System.out.println("ska" + u);
+			u = i;
+		}
+		@Override
+		public void run() {
+			System.out.println("ska" + u);
+			 System.out.println("Hello!现在是：" + new Date().toString());
+		} }}
+
+
+//class MyTask extends TimerTask{
+//	   public void run() {
+//		System.out.println("Hello!现在是：" + new Date().toString());
+//	}
+//}
